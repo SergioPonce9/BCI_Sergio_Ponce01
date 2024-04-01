@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "742ec8ef-cd6a-49de-88eb-4b603b889cb4",
+		"name": "SergioPonce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LOGIN",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"user\": \"administrator\",\r\n        \"password\": \"pwd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/msdataauth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"msdataauth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER/SAVE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJKV1QiLCJzdWIiOiJhZG1pbmlzdHJhdG9yIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTcxMjAwNTIwOH0.bN2o16cNbfiYsth2GF8w8QX_Vmr2_k-sBG-Zfu1PpIrRRJRx6ZlLr9h6-4beiiOMhe3Uq9PTP6lDh5j_-TfwMg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"admin\",\r\n        \"email\": \"juan@rodriguez.org\",\r\n        \"password\": \"pdw\",\r\n        \"phones\": [\r\n            {\r\n                \"number\": \"1234567\",\r\n                \"citycode\": \"1\",\r\n                \"contrycode\": \"57\"\r\n            }\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/msdataauth/user/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"msdataauth",
+						"user",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER/GETALL",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoic2ViYXMiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNzExOTk3ODI5LCJleHAiOjE3MTE5OTg0Mjl9.te5MnJv0We0WNV5pRKZlkptcSJLJ6WM2ydi-pafSHFKN4ePrJ97mGSawXsjcPIF3TbukIjUwviZAXzbIVEBQ_A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/msdataauth/user/get/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"msdataauth",
+						"user",
+						"get",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER/GETBYEMAIL",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoiYWRtaW4iLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNzEyMDAwMzQyLCJleHAiOjE3MTIwMDA5NDJ9.s0ILD5dGkLUiprYp44IxiMTnCPeZNNL_uQUH9GELhQVuknXL1F8QqrhX233WRKt8CqV113ntH2zIuSGHCF0aBg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/msdataauth/user/getbyemail/juan3@rodriguez.org",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"msdataauth",
+						"user",
+						"getbyemail",
+						"juan3@rodriguez.org"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER/DELETE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoiYWRtaW4iLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNzEyMDAwMzQyLCJleHAiOjE3MTIwMDA5NDJ9.s0ILD5dGkLUiprYp44IxiMTnCPeZNNL_uQUH9GELhQVuknXL1F8QqrhX233WRKt8CqV113ntH2zIuSGHCF0aBg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/msdataauth/user/delete/juan2@rodriguez.org",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"msdataauth",
+						"user",
+						"delete",
+						"juan2@rodriguez.org"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

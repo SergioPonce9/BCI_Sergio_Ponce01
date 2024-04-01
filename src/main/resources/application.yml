@@ -1,0 +1,35 @@
+spring:
+  info:
+    name: Backend DataAuth
+  project:
+    version: 1.0.0
+  profiles: default
+  output:
+    ansi:
+      enabled: always
+logging:
+  config: 'classpath:logback.xml'
+
+jwt:
+    secret: BCI001
+
+server:
+  port: 8080
+  servlet:
+    contextPath: /api/msdataauth
+  tomcat:
+    accesslog:
+      enabled: false
+  error:
+    whitelabel:
+      enabled: false
+
+spring.datasource.url: jdbc:h2:mem:testdb
+spring.datasource.driverClassName: org.h2.Driver
+spring.datasource.username: sa
+spring.datasource.password:
+spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+spring.jpa.hibernate.dll-auto: update
+spring.jpa.show-sql: true
+spring.h2.console.enabled: true
+spring.jpa.defer-datasource-initialization: true
