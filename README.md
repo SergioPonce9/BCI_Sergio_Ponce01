@@ -12,10 +12,14 @@
     - password: ""   
 
   - ![img.png](doc/h2_login.JPG)
--
+- 
 - Para ejecutar cualquier servicio de la API:
 - Primero debe generar el token "Authorization" (el token mientras esté vigente puede reutilizarse)
-  - Ejemplo: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTcxMzkwNjk0MCwiaWF0IjoxNzEyMTA2OTQwfQ.eX-YfQtRpebxfKLYPBcJdR0VV0qm0AqfZfNXyL-FFsrj4m4CgKxZ_Xw4eOetw4d_34hUTXr3TM2xUjXKsBh5RQ 
+  - credenciales admin:
+    - user: admin
+    - password: pwd
+  - Ejemplo token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTcxMzkwNjk0MCwiaWF0IjoxNzEyMTA2OTQwfQ.eX-YfQtRpebxfKLYPBcJdR0VV0qm0AqfZfNXyL-FFsrj4m4CgKxZ_Xw4eOetw4d_34hUTXr3TM2xUjXKsBh5RQ
+  
 
 - ![img.png](doc/api_login.JPG)
 
