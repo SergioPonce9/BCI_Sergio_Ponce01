@@ -1,14 +1,5 @@
-insert into users (created, email, isactive, last_login, modified, name, password, token, user_id) values (
-now(),
-'administrator1@gmail.com', 
-true, 
-now(),
-now(),
-'administrator', 
-'pwd',
-'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbmlzdHJhdG9yIiwiZXhwIjoxNjk0OTYxMDE5LCJpYXQiOjE2OTMxNjEwMTl9.vCnIZeQB6iMaD5KduTDEKNSs0goRY-YQ8mSJVBdWyUjDrx2dczsHA9uqx6pq8ODmKqsB37QYTE0Hxcxk_q_SsQ', 
-'cf9fa6ca-cbaf-4a81-93a0-32b22fa5c160');
+insert into users (USER_ID,	CREATED,	EMAIL,	ISACTIVE,	LAST_LOGIN,	MODIFIED,	NAME,	PASSWORD,	TOKEN) values(
+'939dfc5c-ae6b-474f-aed0-ee91eee28bdc',now(),'admin@bci.com',TRUE,now(),now(),'admin','$2a$10$NAZA1.G7A8W7MdmSKdKISOOq.gqBCmpSAWzxYvITtzR.HdK1foR/u','Init');
 
-
-insert into phones (number, citycode, contrycode, user_id) values(12345678, '75', '56', 'cf9fa6ca-cbaf-4a81-93a0-32b22fa5c160')
+insert into phones (number, citycode, contrycode, user_id) values(12345678, '75', '56', '939dfc5c-ae6b-474f-aed0-ee91eee28bdc')
 

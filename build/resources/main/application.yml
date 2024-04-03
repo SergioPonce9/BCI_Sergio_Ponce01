@@ -11,7 +11,7 @@ logging:
   config: 'classpath:logback.xml'
 
 jwt:
-    secret: BCI001
+    secret: bci0001!&?
 
 server:
   port: 8080
